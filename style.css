@@ -1,0 +1,82 @@
+html{
+    background: linear-gradient(to bottom right,#F2F4FF,#F4AFB0,#F5E9E2);
+    height: 100%;
+    }
+    
+    #display{
+        height: 100px;
+        text-align: end;
+    }
+    .button{
+        border-radius: 49%;
+        margin-left: 20px;
+        width: 60px;
+    }
+    .container{
+        margin-top: 10%;
+        width: 400px;
+    }
+    #p_minus{
+        padding: 15px;
+    }
+    #percent{
+        padding: 19px;
+    }
+    .all-buttons{
+        z-index: 1;
+    }
+    
+    #backspace{
+        margin-left: 85%;
+    }
+    #sign-dsp{
+        margin: 3px;
+    }
+    #history-panel{
+        position: absolute;
+        z-index: 2;
+        background-color:#f14668;
+        width: 270px;
+        border-right: solid rgb(243, 243, 243) 1px;
+        display:none;
+    }
+    .history-list{
+        height: 380px;
+        overflow: auto;
+        scroll-behavior: smooth;
+        text-align: end;
+    }
+    
+    .history-list::-webkit-scrollbar{
+        background-color: #f14668;
+        width: 2px;
+    }
+    .history-list::-webkit-scrollbar-thumb{
+        background-color: rgb(211, 219, 226);
+    }
+    #clear-history-btn{
+        width: 15em;
+        height: 30px;
+        font-size:medium;
+        border-radius: 15px;
+        margin-left: 15px;
+        background-color: #F5F3F5;
+    }
+    #sec-dsp{
+        font-size: 17px;
+        color: lightblue;
+    }
+    /*#equals{
+        background-color: #55E226;
+        color: rgb(255, 255, 255);
+    }*/
+    @media screen and (max-width:412px) {
+        .container{
+            width:fit-content;
+        }
+        .button{
+            margin-left:5px;
+        }
+    }
+    
+    

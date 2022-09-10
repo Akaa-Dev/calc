@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> 
+        <link rel="stylesheet" href="style.css">  
+        <script src="https://kit.fontawesome.com/572a6aaa5d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="container ">
+           <div class="tile is-ancestor is-danger">
+                <div class="tile is-child notification is-danger">
+                    <div class= "title"id="display">
+                      <div id="main-dsp">
+                        <span id="num-dsp-left"></span><span id="sign-dsp"></span><span id="num-dsp-right"></span>
+                      </div>
+                      <div id="sec-dsp"></div>
+                    </div >
+                    <div class ="buttons is-4 icons">
+                        <span id ="history" class="icon">
+                            <i class="fa-2x fa-solid fa-clock-rotate-left"></i>
+                        </span>
+                       
+                        <span id= "backspace"class="icon">
+                            <i class="fa-2x fas fa-solid fa-delete-left"></i>
+                          </span>
+                    </div>
+                    <hr>
+                    <div id="history-panel">
+                        <div class="history-list ">
+                        <ul id="history-entry">                          
+                        </ul>
+                        </div>
+                        <div>
+                            <button id="clear-history-btn">clear history</button>
+                        </div>
+                    </div>
+                    <div class="all-buttons">
+                        <div class="buttons buttons1 is-4">
+                            <button class="button is-large" id="clear">C</button>
+                            <button class="button is-large" id="bracket">()</button>
+                            <button class="button is-large" id="percent">%</button>
+                            <button class="button is-large" id="division"><i class="fa-regular fa-divide"></i></button>
+                        </div>
+                        <div class="buttons is-4">
+                            <button class="button is-large" id="seven">7</button>
+                            <button class="button is-large" id="eight">8</button>
+                            <button class="button is-large" id="nine">9</button>
+                            <button class="button is-large" id="multiply"><i class="fa-regular fa-xmark"></i></button>
+                        </div>
+                        <div class="buttons is-4">
+                            <button class="button is-large" id="four">4</button>
+                            <button class="button is-large" id="five">5</button>
+                            <button class="button is-large" id="six">6</button>
+                            <button class="button is-large" id="substract"><i class="fa-regular fa-minus"></i></button>
+                        </div>
+                        <div class="buttons is-4">
+                            <button class="button is-large" id="one">1</button>
+                            <button class="button is-large" id="two">2</button>
+                            <button class="button is-large" id="three">3</button>
+                            <button class="button is-large" id="add"><i class="fa-regular fa-plus"></i></button>
+                        </div>
+                        <div class="buttons is-4">
+                            <button class="button is-large" id="p_minus">+/-</button>
+                            <button class="button is-large" id="zero">0</button>
+                            <button class="button is-large" id="dot">.</button>
+                            <button class="button is-large" id="equals"><i class="fa-regular fa-equals"></i></button>
+                      </div>
+                    </div>
+                    
+                </div>
+              </div>
+           </div>
+         
+        </section>
+    <script src="app.js"></script>
+    </body>
+</html>
